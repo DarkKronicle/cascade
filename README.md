@@ -1,5 +1,9 @@
 <br><br>
 
+# Why fork?
+
+This modifies cascade to include some of my personal preferences, such as working with Sidebery. See how to have it work with Sidebery below.
+
 # Cascade
 **A minimalistic and keyboard centered userChrome**
 
@@ -178,6 +182,11 @@ This simply offers premade colour configs for [Catppuccin](https://github.com/ca
 > Alternatively you can also just copy the contents of your desired flavour config into the colour config file.
 
 <br>
+
+### Sidebery - Vertical Tabs
+
+1. Download [Sidebery from GitHub](https://github.com/mbnuqw/sidebery) (make sure it's the beta or version >= 5.0.0)
+2. Copy contents of [integrations/sidebery/sidebery.css](integrations/sidebery/sidebery.css) into the Addons CSS settings
 
 ### Tab Center Reborn — Vertical Tabs
 

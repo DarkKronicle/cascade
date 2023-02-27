@@ -1,0 +1,26 @@
+#root_container:hover .top-horizontal-box .static-btns {
+    opacity: 1;
+    transition-delay: 100ms;
+  transition: all 200ms ease;
+}
+
+#root_container:not(:hover) .top-horizontal-box .static-btns {
+    opacity: 0;
+transition: all 200ms ease;
+}
+
+#root_container:not(:hover) .top-horizontal-box {
+    opacity: 0;
+
+}
+
+#root_container .Tab .title {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 100ms ease;
+}
+
+#root_container:hover .Tab .title {
+    opacity: 1;
+  transform: translateX(0px);
+}

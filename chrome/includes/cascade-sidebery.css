@@ -1,0 +1,31 @@
+/* #TabsToolbar { display: none !important; } */
+#nav-bar { width: 100vw !important; }
+
+#TabsToolbar, #sidebar-header {
+  display: none !important;
+}
+
+#browser { position: relative; }
+
+#main-window[inFullscreen][inDOMFullscreen] #appcontent { margin-left: 0; }
+
+#TabsToolbar, #sidebar-box:not([hidden]) {
+  position: absolute;
+  /* display: block; */
+  top: 0; bottom: 0; /* right 0; */
+  z-index: 1;
+  min-width: 40px !important;
+  max-width: 40px !important;
+  border-right: none;
+
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+#TabsToolbar, #sidebar-box:not([hidden]) ~ #appcontent { margin-left: 40px; }
+
+#TabsToolbar, #sidebar-box:hover {
+  min-width: 10vw !important;
+  width: 30vw !important;
+  max-width: 250px !important;
+}
