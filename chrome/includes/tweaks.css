@@ -1,0 +1,100 @@
+/* https://github.com/datguypiko/Firefox-Mod-Blur/blob/master/EXTRA%20MODS/Compact%20extensions%20menu/Style%202/With%20Separator%20line/cleaner_extensions_menu.css */
+
+/*  Clean and tight extensions menu */
+#unified-extensions-panel #unified-extensions-view {
+    max-width: 230px !important;
+}
+
+#unified-extensions-view{
+    --uei-icon-size: 16px; /*  Change icon size */
+    --firefoxcss-number-of-extensions-in-a-row: 5; /*  Increase to the number of icons you want in one row */
+}
+
+#unified-extensions-view .panel-header,
+#unified-extensions-view .panel-header + toolbarseparator,
+#unified-extensions-view .panel-subview-body + toolbarseparator,
+#unified-extensions-view #unified-extensions-manage-extensions,
+#unified-extensions-view .unified-extensions-item-menu-button.subviewbutton,
+#unified-extensions-view .unified-extensions-item-action-button .unified-extensions-item-contents{
+    display:none !important;
+}
+
+#unified-extensions-view .panel-subview-body {
+    padding:3px !important;
+}
+
+#unified-extensions-view .unified-extensions-item .unified-extensions-item-icon, 
+#unified-extensions-view .unified-extensions-item .toolbarbutton-badge-stack {
+    margin-inline-end: 0px !important;
+}
+
+#unified-extensions-view #overflowed-extensions-list,
+#unified-extensions-view #unified-extensions-area,
+#unified-extensions-view .unified-extensions-list {
+    display: grid !important;
+    grid-template-columns: repeat(var(--firefoxcss-number-of-extensions-in-a-row),auto);
+    justify-items:center !important;
+    align-items:center !important;
+}
+
+#unified-extensions-view .unified-extensions-list .unified-extensions-item-action-button {
+     margin-left:2px !important;
+     margin-right:2px !important;
+ 
+  
+}
+#unified-extensions-view #unified-extensions-area .unified-extensions-item  {
+     margin-left:2px !important;
+     margin-right:2px !important;  
+ 
+}
+
+#unified-extensions-view .unified-extensions-list .unified-extensions-item,
+#unified-extensions-view .unified-extensions-list{
+     max-width: max-content;
+}
+
+#unified-extensions-view #unified-extensions-area {
+    padding-bottom: 3px !important;
+    border-bottom: 1px solid #aeaeae33 !important;
+}
+
+#unified-extensions-view .unified-extensions-list {
+/*     border-top: 1px solid #aeaeae33 !important; */
+}
+
+menuseparator {
+    border-color: var(--panel-separator-color, #50505090) !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  /*border-image: var(--panel-separator-zap-gradient) 1 !important;*/
+  /*border-image: linear-gradient(165deg, #d02f85ee 0%, #b336fcee 8%, #3567fdee 40%, #4e7afdee 60%,#4e89fdee 70%, #d02f85ee 100%) 1 !important;*/
+}
+/*Colores generales*/
+menupopup{background: var(--gradient) !important; border-radius: 6px !important;}
+#PlacesToolbar menupopup { padding: 0px !important;}
+#PlacesToolbar menupopup menupopup{ margin-inline-start: 0px !important; }
+.menupopup-arrowscrollbox {
+    background: var(--arrowpanel-background, #50505090) !important;
+    background-color: var(--arrowpanel-background, #50505090) !important;
+    color: var(--arrowpanel-color, #50505090) !important;
+    border: 1px solid transparent !important;
+    border-radius: 6px !important;
+    margin: 0px !important;
+    background-clip: padding-box !important;
+    /*ColorFondoAlPasarElMouseSobreItems*/
+    --menuitem-hover-background-color: color-mix(in srgb, var(--button-hover-bgcolor) 95%, var(--organizer-color, var(--arrowpanel-color))) !important;
+}
+/*ColoresMenú*/
+.menupopup {
+    --panel-color: var(--arrowpanel-color, FieldText) !important;
+    /*ColorLetrasDelMenú*/
+    --panel-border-color: var(--arrowpanel-border-color, Field)!important;
+    /*bordeMenú*/
+    --panel-background: var(--arrowpanel-background, Field) !important;
+    /*FondoMenú*/
+    --menu-color: var(--arrowpanel-color, FieldText) !important;
+    /*ColorLetrasAlPasarElMouseSobreItems*/
+    --menu-border-color: var(--panel-separator-color, Field) !important;
+    /*LineaSeparadoraItems*/
+}

@@ -27,16 +27,40 @@
 *==============================================================================================*/
 
 
+/* @import 'includes/cascade-colours.css'; */
 
 @import 'includes/cascade-config-mouse.css';
-
-/* Comment out line below if you want to sync with firefox theme colors */
-@import 'includes/cascade-colours.css';
-
 @import 'includes/cascade-layout.css';
 @import 'includes/cascade-responsive.css';
 @import 'includes/cascade-floating-panel.css';
-
 @import 'includes/cascade-nav-bar.css';
 @import 'includes/cascade-tabs.css';
-@import 'includes/cascade-sidebery.css';
+@import 'includes/cascade-tcr.css';
+
+/*
+
+*/
+
+/*
+@import 'includes/tweaks.css';
+
+#navigator-toolbox-background {
+	background: transparent !important;
+}
+
+#navigator-toolbox {
+	background: transparent !important;
+}
+
+#navigator-toolbox-background {
+	-moz-default-appearance: none !important;
+}
+
+#sidebar-box {
+	background: transparent !important;
+}
+
+#sidebar-box > #browser,
+#webextpanels-window{ background: transparent !important }
+
+*/

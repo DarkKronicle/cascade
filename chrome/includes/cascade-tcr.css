@@ -1,0 +1,87 @@
+/* #TabsToolbar { display: none !important; } */
+#nav-bar { width: 100vw !important; }
+
+#TabsToolbar, #sidebar-header {
+  display: none !important;
+}
+
+#browser { position: relative; }
+
+#TabsToolbar, #sidebar-box:not([hidden]) {
+  position: absolute;
+  /* display: block; */
+  top: 0; bottom: 0; /* right 0; */
+  z-index: 1;
+  min-width: 42px !important;
+  max-width: 42px !important;
+  border-right: none;
+
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+#TabsToolbar, #sidebar-box:not([hidden]) ~ #appcontent { margin-left: 36px; }
+
+#TabsToolbar, #sidebar-box:hover {
+  min-width: 10vw !important;
+  width: 30vw !important;
+  max-width: 250px !important;
+}
+
+
+#sidebar-box[sidebarcommand*="treestyletab"] #sidebar-header { display: none; }
+
+#sidebar-box[sidebarcommand*="treestyletab"]:not([hidden]) {
+
+  display: block;
+
+  position: absolute;
+  top: 0; bottom: 0;
+  z-index: 1;
+
+  min-width: 50px !important; max-width: 50px !important;
+
+  border-right: none;
+
+  transition: all 0.2s ease;
+
+  overflow: hidden;
+
+}
+
+[sidebarcommand*="treestyletab"] #sidebar,
+#sidebar-box[sidebarcommand*="treestyletab"]:hover { min-width: 10vw !important; width: 30vw !important; max-width: 250px !important; }
+
+[sidebarcommand*="treestyletab"] #sidebar { height: 100%; max-height: 100%; }
+
+#sidebar-box[sidebarcommand*="treestyletab"]:not([hidden]) ~ #appcontent { margin-left: 50px; }
+#main-window[inFullscreen][inDOMFullscreen] #appcontent { margin-left: 0; }
+/* Removes gap between active tab highlight and edge of bar */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header, #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] ~ #sidebar-splitter {
+    display: none;
+}
+
+/* #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+  overflow: hidden;
+  min-width: 40px !important;
+  max-width: 40px !important;
+  transition: all 0.2s ease;
+  border-right: 1px solid #0c0c0d;
+  z-index: 2;
+}
+
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover,
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar {
+  min-width: 260px !important;
+  max-width: 260px !important;
+  z-index: 1;
+}
+
+#aHTMLTooltip,
+#remoteBrowserTooltip {
+  display: none !important
+}  */
+
+#titlebar {
+  visibility: collapse;
+}
